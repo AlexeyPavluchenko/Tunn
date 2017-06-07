@@ -1,0 +1,12 @@
+function U = Pot(x)
+
+global eV
+global Ec;
+global d;
+global nm;
+
+if (x<0)
+    U = 0;
+    return;
+else if (x<=d)
+        U=Ec+x/d*(WFd-)

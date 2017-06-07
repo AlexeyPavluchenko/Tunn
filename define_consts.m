@@ -1,0 +1,32 @@
+global hbar;
+global h;
+global el_mass;
+global el_charge;
+global Na;
+global kb;
+global eV;
+global Ec;
+global WFd;
+global d;
+global nm;
+global Temp;
+global Ed;
+
+%%% !!! All constants in this file should be declared as global
+% Global constants
+hbar=1.0546e-34;
+h=6.626e-34;
+el_mass=9.11e-31;
+el_charge=1.602e-19;
+Na=6.022e23;
+kb=1.381e-23;
+eV=1.602e-19;
+nm=1e-9;
+
+% Material and Experiment Constants
+Ec=0.5*eV;
+d=3*nm;
+WFd=0.5*eV;
+Ed=0.1*eV;
+
+Temp = 300;

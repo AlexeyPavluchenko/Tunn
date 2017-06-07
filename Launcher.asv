@@ -1,0 +1,41 @@
+global hbar;
+global h;
+global el_mass;
+global el_charge;
+global Na;
+global kb;
+global eV
+global Ec;
+global WFd;
+global d;
+global nm;
+global Temp;
+
+define_consts;
+
+% uu=(-200:5:200)*0.25/100;
+% Temps = 100:100:300;
+% cur=zeros(length(Temps),length(uu));
+% 
+% for j=1:length(Temps)
+%     Temp=Temps(j);
+%     for i=1:length(uu)
+%         cur(j,i)=intCurr(uu(i));
+%     end
+%     disp(num2str(Temp));
+% end
+% plot(uu,(cur));
+
+uu=(0:5:200)*0.25/100;
+dd = (1:5)*nm;
+cur=zeros(length(dd),length(uu));
+
+Temp = 
+for j=1:length(dd)
+    d=dd(j);
+    for i=1:length(uu)
+        cur(j,i)=intCurr(uu(i));
+    end
+    disp(num2str(d));
+end
+semilogy(uu,(cur));
